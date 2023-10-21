@@ -3,34 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS variable</title>
+    <title>REM 單位</title>
     <style>
-      /* 全域變數 */
       :root {
-        --primary: #69f0ae;
+        font-size: 20px;
+      }
+      
+      .em2 {
+        font-size: 2em;
       }
 
-      .bg-primary {
-        background-color: var(--primary);
-      }
-
-      /* 區域變數 */
-      .local {
-        --primary: orange;
-      }
-
-      .box {
-        width: 100px;
-        height: 100px;
-        padding: 20px;
-        border: 5px solid #eee;
+      .rem2 {
+        font-size: 2rem;
       }
     </style>
   </head>
   <body>
-    <div class="box bg-primary"></div>
-    <div class="local">
-      <div class="box bg-primary"></div>
-    </div>
+    <h2>原文字大小</h2>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quasi perferendis accusamus odio. In et suscipit reprehenderit pariatur voluptas nesciunt odio! Aliquid, mollitia in explicabo incidunt odio voluptates reprehenderit quisquam?</div>
+
+    <h2>單位：em</h2>
+    <div class="em2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fuga accusantium iure, deserunt eaque molestiae, quisquam, id veniam cum sint minima eos accusamus voluptates at cumque vel sed. Esse, vitae.<strong class="em2">Lorem ipsum dolor sit amet consectetur.</strong></div>
+
+    <h2>單位：rem</h2>
+    <div class="rem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, saepe nulla sint cumque est labore sed rerum non dignissimos aliquam, sapiente exercitationem optio ex ullam. Hic, veniam aut? Harum, dignissimos!<strong class="rem2">Lorem ipsum dolor sit amet consectetur.</strong></div>
   </body>
 </html>
